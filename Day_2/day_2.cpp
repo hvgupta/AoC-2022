@@ -14,7 +14,7 @@ int main(){
         else {points += strat_move+1;}
         data++;
     }
-    cout << points << endl;
+    cout << points << endl; // Part 1
 
     int new_points = 0;
     data = file.begin();
@@ -33,5 +33,5 @@ int main(){
         }
         data++;
     }
-    cout << new_points << endl;
+    cout << new_points << endl; //Part 2
 }
