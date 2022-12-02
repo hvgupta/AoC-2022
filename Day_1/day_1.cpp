@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <fstream>
+#include "../file_reader.h"
 using namespace std;
 
 vector<string> get_lines(){
