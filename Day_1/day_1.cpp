@@ -36,6 +36,6 @@ int main(){
         }
         data++;
     }
-    cout << max1 << endl;
-    cout << max1+max2+max3 << endl;
+    cout << max1 << endl; // Part 1
+    cout << max1+max2+max3 << endl; //Part 2
 }
