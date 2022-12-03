@@ -2,8 +2,8 @@
 #include <list>
 using namespace std;
 
-template <typename Iterator, typename T>
-Iterator find( Iterator begin, Iterator end,T p){
+typedef typename vector<char>::const_iterator Iterator;
+Iterator find( Iterator begin, Iterator end, char p){
     Iterator node = begin;
     while (node != end){
         if (*node == p){return node;}
@@ -13,8 +13,6 @@ Iterator find( Iterator begin, Iterator end,T p){
 }
 
 int main(){
-
-    typedef typename vector<char>::const_iterator Iterator;
     int sum = 0;
     vector<string> file = get_lines("input.txt");
     vector<string>::const_iterator data = file.begin();
