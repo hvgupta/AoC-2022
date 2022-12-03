@@ -43,7 +43,7 @@ int main(){
         item_list.clear();
         data++;
     }
-    cout << sum << endl;
+    cout << sum << endl; //Part 1
 
     data = file.begin();
     int j = 0;
@@ -89,5 +89,5 @@ int main(){
         data++;
     }
 
-    cout << new_sum << endl;
+    cout << new_sum << endl; //Part 2
 }
