@@ -3,7 +3,6 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-using namespace std;
 
 vector<string> get_lines(string file){
     ifstream fin(file);
