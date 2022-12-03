@@ -1,19 +1,7 @@
 #include "../file_reader.h"
 
-vector<string> get_lines(){
-    ifstream fin("input.txt");
-    string line;
-
-    vector<string> file_content;
-    while (getline(fin,line)){
-        file_content.push_back(line);
-    }
-
-    return file_content;
-}
-
 int main(){
-    vector<string> file = get_lines();
+    vector<string> file = get_lines("input.txt");
     vector<string>::const_iterator data = file.begin();
     int max1 = 0, max2 = 0, max3 = 0;
     int cmp = 0;
