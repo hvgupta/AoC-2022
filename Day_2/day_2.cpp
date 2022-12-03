@@ -1,4 +1,5 @@
 #include "../file_reader.h"
+using namespace std;
 
 int main(){
     vector<string> file = get_lines("input.txt");
