@@ -4,11 +4,11 @@
 #include <vector>
 #include <fstream>
 
-vector<string> get_lines(string file){
-    ifstream fin(file);
-    string line;
+std::vector<std::string> get_lines(std::string file){
+    std::ifstream fin(file);
+    std::string line;
 
-    vector<string> file_content;
+    std::vector<std::string> file_content;
     while (getline(fin,line)){
         file_content.push_back(line);
     }
