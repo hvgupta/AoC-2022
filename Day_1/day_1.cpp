@@ -14,7 +14,7 @@ vector<string> get_lines(){
 
 int main(){
     vector<string> file = get_lines();
-    vector<string>::iterator data = file.begin();
+    vector<string>::const_iterator data = file.begin();
     int max1 = 0, max2 = 0, max3 = 0;
     int cmp = 0;
     vector<string>::iterator it = file.end();
