@@ -1,4 +1,5 @@
 #include "../file_reader.h"
+using namespace std;
 
 template <typename Iterator, typename T>
 Iterator find( Iterator begin, Iterator end,T p){
