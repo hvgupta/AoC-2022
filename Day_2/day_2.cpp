@@ -5,7 +5,7 @@ int main(){
 
     int points = 0;
     int opponent_move = 0, strat_move = 0;
-    vector<string>::iterator data = file.begin();
+    vector<string>::const_iterator data = file.begin();
     while(data != file.end()){
         opponent_move = (*data)[0] - 'A';
         strat_move = (*data)[2] - 'X';
