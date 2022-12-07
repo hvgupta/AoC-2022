@@ -7,7 +7,6 @@ struct File{
     int size;
     File* parent;
     File(string n, File* parent, int s=0){name = n; size = s; this->parent = parent;}
-    File(const File& f){name = f.name; size = f.size; parent = f.parent;}
 };
 
 int find(vector<File*>& dirs, string& file_name, File* parent = nullptr){
