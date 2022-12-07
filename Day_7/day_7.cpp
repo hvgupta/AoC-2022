@@ -1,5 +1,4 @@
 #include "../file_reader.h"
-#include <queue>
 using namespace std;
 
 struct File{
@@ -84,7 +83,7 @@ int main(){
 
     cout << min << endl; //Part 2
     for (int i = 0; i < directory.size(); i++){
-        delete directory[i];
+        delete directory[i]; // NOT THIS TIME MEMORY LEAK 
         directory[i] = nullptr;
     }
 }
