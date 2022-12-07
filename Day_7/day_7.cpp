@@ -18,8 +18,6 @@ int find(vector<File*>& dirs, string& file_name, File* parent = nullptr){
 
 int i = 0;
 int main(){
-    bool test1 = false;
-    bool test2 = false;
     vector<string> file = get_lines("input.txt");
     vector<string>::const_iterator data = file.begin(); 
     vector<File*> directory;
