@@ -3,7 +3,7 @@
 #include <array>
 using namespace std;
 
-#define LEN 1 // change this number for parts
+const int LEN = 1; // change this number for parts
 
 #define x first
 #define y second
