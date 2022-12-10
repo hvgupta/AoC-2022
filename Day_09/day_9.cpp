@@ -1,9 +1,9 @@
 #include "../file_reader.h"
-#include <sstream>
 #include <array>
+#include <list>
 using namespace std;
 
-const int LEN = 1; // change this number for parts
+#define LEN 1 // change this number for parts
 
 #define x first
 #define y second
@@ -58,8 +58,8 @@ int main(){
         char dir = (*data)[0];
         string strNum = (*data);
         strNum.erase(0,2);
-        int num = 0;
-        stringstream(strNum) >> num;
+        int num = stoi(strNum);
+        
         for (int i = 0; i < num; i++){
             switch (dir){
                 case 'U':   all_cord[head].y += 1;
@@ -77,5 +77,5 @@ int main(){
         data++;
     }
 
-    cout << past_coord.size() << endl; //Part 1 and Part 2
+    cout << past_coord.size() << endl; //Part 1 abd Part 2
 }
