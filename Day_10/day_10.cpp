@@ -1,5 +1,4 @@
 #include "../file_reader.h"
-#include <sstream>
 #include <map>
 using namespace std;
 
@@ -38,8 +37,7 @@ int main(){
         if (cycles->value == 2){
             string line = (*data);
             line.erase(0,5);
-            int value_added;
-            stringstream(line) >> value_added;
+            int value_added = stoi(line);
             xVal += value_added;
         } 
 
