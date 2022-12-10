@@ -29,9 +29,9 @@ int main(){
         for (int x = 0; x < cycles->value; x++){
             int index = pos/40;
             if (abs(xVal - (pos%40)) <= 1){
-                display[index] += "#";
+                display[index] += "██";
                 }
-            else{display[index] += ".";}
+            else{display[index] += "░░";}
             pos++;
             num_cycles++;
         }
