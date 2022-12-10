@@ -1,7 +1,6 @@
 #include "../file_reader.h"
 #include <sstream>
 #include <array>
-#include <list>
 using namespace std;
 
 #define LEN 1 // change this number for parts
