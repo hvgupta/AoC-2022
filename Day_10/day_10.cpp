@@ -27,9 +27,6 @@ int main(){
             breakPointNum++;
         }
         for (int x = 0; x < cycles->value; x++){
-            if (pos > 40){
-                cout << "here" << endl;
-            }
             int index = pos/40;
             if (abs(xVal - (pos%40)) <= 1){
                 display[index] += "#";
