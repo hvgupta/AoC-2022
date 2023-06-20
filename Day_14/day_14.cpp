@@ -116,11 +116,6 @@ pos getSandNewPos(const vector<pos>& combinedPos, const pos& sandPos, const int&
     return val; //  otherwise get the value of the calculated position
 }
 
-// pos isStablised(const vector<pos>& combinedPos, const pos& SandPos, const int& max){
-//     int newMax = max+2;
-
-// }
-
 int main(){
     vector<string> file = get_lines("input.txt");
     vector<string>::iterator data = file.begin();
